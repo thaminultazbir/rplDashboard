@@ -79,10 +79,14 @@
     flex: 1;
 }
 .nav-menu .sub-menu{
-    /* display: none; */
+    display: none;
     margin-left: 50px;
     /* padding-left: 20px; */
 }
+.nav-menu ul li.active > .sub-menu {
+    display: block;
+    transition: all 0.3s;
+  }
 
 .nav-menu .sub-menu li a{
     padding: 10px 8px;
