@@ -5,13 +5,34 @@ export const menuItemsData = [
         arrowIcon: 'ph-caret-down',
         submenu:[
             {
-                title:'Agrani Bank Plc'
+                title:'Agrani Bank PLC'
             },
             {
-                title:'Shahjalal Bank Plc'
+                title:'Eastern Bank PLC'
             },
             {
-                title:'Bank Asia Plc'
+                title:'Standard Bank PLC'
+            },
+            {
+                title:'Shahjalal Islami Bank PLC'
+            },
+            {
+                title:'City Bank PLC'
+            },
+            {
+                title:'Midland Bank PLC'
+            },
+            {
+                title:'Premier Bank PLC'
+            },
+            {
+                title:'Bank Asia PLC'
+            },
+            {
+                title:'Modhumoti Bank PLC'
+            },
+            {
+                title:'NCC Bank PLC'
             },
         ]
     },

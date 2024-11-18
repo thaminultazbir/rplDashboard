@@ -1,30 +1,36 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { menuItemsData } from "../menuItemsData";
 
-const Navbar = () =>{
+const Navbar = () => {
     const [expandIndex, setExpandIndex] = useState(null);
-    const toggleDropdown = (index) =>{
+
+    const toggleDropdown = (index) => {
         setExpandIndex(expandIndex === index ? null : index);
-    }
-    return(
+    };
+
+    return (
         <div className="nav">
             <div className="menu">
                 <p className="title">Main</p>
                 <ul>
-                    {menuItemsData.map((menu,index)=>{
-                        return(
-                            <li key={index}>
-                            <a href="#/" onClick={()=>toggleDropdown(index)}>
+                    {menuItemsData.map((menu, index) => (
+                        <li key={index}>
+                            <a href="#/" onClick={() => toggleDropdown(index)}>
                                 <i className={`icon ph-bold ph ${menu.icon}`}></i>
                                 <span className="text">{menu.title}</span>
                                 {menu.arrowIcon && (
-                                    <i className={`arrow icon ph-bold ${menu.arrowIcon} ${menu.submenu && expandIndex === index ? "rotate" : ""}`}
+                                    <i
+                                        className={`arrow icon ph-bold ${menu.arrowIcon} ${
+                                            menu.submenu && expandIndex === index ? "rotate" : ""
+                                        }`}
                                     ></i>
                                 )}
                             </a>
-                            {menu.submenu && expandIndex === index && (
-                                <ul className={`sub-menu ${expandIndex === index ? 'open' : ''}`}>
-                                    {menu.submenu && menu.submenu.map((subItem, subIndex) =>(
+                            {menu.submenu && (
+                                <ul
+                                    className={`sub-menu ${expandIndex === index ? "open" : ""}`}
+                                >
+                                    {menu.submenu.map((subItem, subIndex) => (
                                         <li key={subIndex}>
                                             <a href="#/">{subItem.title}</a>
                                         </li>
@@ -32,11 +38,12 @@ const Navbar = () =>{
                                 </ul>
                             )}
                         </li>
-                        );
-                    })}
+                    ))}
                 </ul>
             </div>
         </div>
     );
 };
+
 export default Navbar;
+

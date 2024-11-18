@@ -83,25 +83,23 @@
 }
 .menu ul li .arrow{
     font-size: 14px;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
-/* .menu ul li.active .arrow{
-    transform: rotate(180deg);
-} */
 .arrow.rotate{
     transform: rotate(180deg);
 }
 .menu .sub-menu{
     max-height: 0px;
     opacity: 0;
+    overflow: hidden;
     margin-left: 20px;
     padding-left: 20px;
     padding-top: 5px;
     border-left: 1px solid #f6f6f6;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-.sub-menu.open{
-    max-height: 200px;
+.menu .sub-menu.open {
+    max-height: 500px;
     opacity: 1;
 }
 .menu .sub-menu li a{
