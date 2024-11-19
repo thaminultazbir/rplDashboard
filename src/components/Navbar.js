@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { menuItemsData } from "../menuItemsData";
-import {NavSetting} from "./NavSetting";
+import NavSetting from "./NavSetting";
 
 const Navbar = () => {
     const [expandIndex, setExpandIndex] = useState(null);
