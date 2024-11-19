@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { menuItemsData } from "../menuItemsData";
 import NavSetting from "./NavSetting";
+import Navfoot from "./NavFoot";
 
 const Navbar = () => {
     const [expandIndex, setExpandIndex] = useState(null);
@@ -44,6 +45,9 @@ const Navbar = () => {
             </div>
             <div className="menu">
                 <NavSetting />
+            </div>
+            <div className="menu">
+                <Navfoot />
             </div>
         </div>
     );
