@@ -38,34 +38,42 @@ export const menuItemsData = [
     },
     {
         title: 'Budget Monitoring',
-        icon: 'ph-money'
+        icon: 'ph-money',
+        link: '/budgetmonitoring'
     },
     {
         title: 'Loan Repay Schedule',
-        icon: 'ph-hand-coins'
+        icon: 'ph-hand-coins',
+        link: '/loanrepayschedule'
     },
     {
         title: 'Classification Status',
-        icon: 'ph-presentation-chart'
+        icon: 'ph-presentation-chart',
+        link: '/classificationstatus'
     },
     {
         title: 'Payment Made',
-        icon: 'ph-wallet'
+        icon: 'ph-wallet',
+        link: '/paymentmade'
     },
     {
         title: 'Rate and Commission Chart',
-        icon: 'ph-chart-bar'
+        icon: 'ph-chart-bar',
+        link: '/rateandcommissionchart'
     },
     {
         title: 'Project Finance',
         icon: 'ph-projector-screen',
+        link: '/projectfinance'
     },
     {
         title: 'Insurance Policy Details',
-        icon: 'ph-detective'
+        icon: 'ph-detective',
+        link: '/insurancepolicydetails'
     },
     {
         title: 'Task Monitoring',
-        icon: 'ph-security-camera'
+        icon: 'ph-security-camera',
+        link: '/taskmonitoring'
     },
 ];

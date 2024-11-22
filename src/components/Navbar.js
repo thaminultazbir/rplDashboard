@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { menuItemsData } from "../menuItemsData";
 import NavSetting from "./NavSetting";
 import Navfoot from "./NavFoot";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [expandIndex, setExpandIndex] = useState(null);
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <ul>
                     {menuItemsData.map((menu, index) => (
                         <li key={index}>
-                            <a href="#/" onClick={() => toggleDropdown(index)}>
+                            <NavLink to={menu.link} onClick={() => toggleDropdown(index)}>
                                 <i className={`icon ph-bold ph ${menu.icon}`}></i>
                                 <span className="text">{menu.title}</span>
                                 {menu.arrowIcon && (
@@ -27,7 +28,7 @@ const Navbar = () => {
                                         }`}
                                     ></i>
                                 )}
-                            </a>
+                            </NavLink>
                             {menu.submenu && (
                                 <ul
                                     className={`sub-menu ${expandIndex === index ? "open" : ""}`}
