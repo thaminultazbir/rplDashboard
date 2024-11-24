@@ -5,6 +5,10 @@ import Budgetmonitoring from './components/pages/Budgetmonitoring';
 import Loanrepayschedule from './components/pages/Loanrepayschedule';
 import Classificationstatus from './components/pages/Classificationstatus';
 import Rateandcommissionchart from './components/pages/Rateandcommissionchart';
+import Paymentmade from './components/pages/Paymentmade';
+import Projectfinance from './components/pages/Projectfinance';
+import Insurancepolicydetails from './components/pages/Insurancepolicydetails';
+import Taskmonitoring from './components/pages/Taskmonitoring';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,19 +34,19 @@ function App() {
     },
     {
       path:'/paymentmade',
-      element: <Budgetmonitoring />
+      element: <Paymentmade />
     },
     {
       path:'/projectfinance',
-      element: <Budgetmonitoring />
+      element: <Projectfinance />
     },
     {
       path:'/insurancepolicydetails',
-      element: <Budgetmonitoring />
+      element: <Insurancepolicydetails />
     },
     {
       path:'/taskmonitoring',
-      element: <Budgetmonitoring />
+      element: <Taskmonitoring />
     }
 
   ]);
