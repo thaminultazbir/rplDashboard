@@ -11,14 +11,13 @@ export default function Rateandcommissionchart(){
                 <th>Current Commission Rate</th>
             </tr>
             {
-                Db.budgetMonitoring.map((data, index)=>{
+                Db.ratesandCommissionChart.map((data, index)=>{
                     return(
                         <tr>
-                            <td key={index}>{data.Previous05YearsBudgetVsActual}</td>
-                            <td key={index}>{data.CurrentYearlyBudget}</td>
-                            <td key={index}>{data.MonthlyBudget}</td>
-                            <td key={index}>{data.MonthlyActual}</td>
-                            <td key={index}>{data.CumulativeVariance}</td>
+                            <td key={index}>{data.BankName}</td>
+                            <td key={index}>{data.currentInterestRate}</td>
+                            <td key={index}>{data.previous03YearsInterestRate}</td>
+                            <td key={index}>{data.currentCommissionRate}</td>
                         </tr>
                     );
                 })

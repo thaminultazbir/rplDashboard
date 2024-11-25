@@ -12,14 +12,14 @@ export default function Insurancepolicydetails(){
                 <th>Covering Period</th>
             </tr>
             {
-                Db.budgetMonitoring.map((data, index)=>{
+                Db.insurancePolicyDetails.map((data, index)=>{
                     return(
                         <tr>
-                            <td key={index}>{data.Previous05YearsBudgetVsActual}</td>
-                            <td key={index}>{data.CurrentYearlyBudget}</td>
-                            <td key={index}>{data.MonthlyBudget}</td>
-                            <td key={index}>{data.MonthlyActual}</td>
-                            <td key={index}>{data.CumulativeVariance}</td>
+                            <td key={index}>{data.policyDetails}</td>
+                            <td key={index}>{data.insurer}</td>
+                            <td key={index}>{data.insuree}</td>
+                            <td key={index}>{data.policyDate}</td>
+                            <td key={index}>{data.coveringPeriod}</td>
                         </tr>
                     );
                 })

@@ -12,14 +12,14 @@ export default function Paymentmade(){
                 <th>Monthly</th>
             </tr>
             {
-                Db.budgetMonitoring.map((data, index)=>{
+                Db.paymentMade.map((data, index)=>{
                     return(
                         <tr>
-                            <td key={index}>{data.Previous05YearsBudgetVsActual}</td>
-                            <td key={index}>{data.CurrentYearlyBudget}</td>
-                            <td key={index}>{data.MonthlyBudget}</td>
-                            <td key={index}>{data.MonthlyActual}</td>
-                            <td key={index}>{data.CumulativeVariance}</td>
+                            <td key={index}>{data.particulars}</td>
+                            <td key={index}>{data.y2022}</td>
+                            <td key={index}>{data.y2023}</td>
+                            <td key={index}>{data.ytd}</td>
+                            <td key={index}>{data.monnthly}</td>
                         </tr>
                     );
                 })

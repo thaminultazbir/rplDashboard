@@ -12,14 +12,14 @@ export default function Taskmonitoring(){
                 <th>Yearly</th>
             </tr>
             {
-                Db.budgetMonitoring.map((data, index)=>{
+                Db.taskMonitoring.map((data, index)=>{
                     return(
                         <tr>
-                            <td key={index}>{data.Previous05YearsBudgetVsActual}</td>
-                            <td key={index}>{data.CurrentYearlyBudget}</td>
-                            <td key={index}>{data.MonthlyBudget}</td>
-                            <td key={index}>{data.MonthlyActual}</td>
-                            <td key={index}>{data.CumulativeVariance}</td>
+                            <td key={index}>{data.Adhoc}</td>
+                            <td key={index}>{data.monthly}</td>
+                            <td key={index}>{data.quarterly}</td>
+                            <td key={index}>{data.halfyearly}</td>
+                            <td key={index}>{data.yearly}</td>
                         </tr>
                     );
                 })

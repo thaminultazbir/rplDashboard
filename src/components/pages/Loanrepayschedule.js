@@ -12,14 +12,14 @@ export default function Loanrepayschedule(){
                 <th>Ageing</th>
             </tr>
             {
-                Db.budgetMonitoring.map((data, index)=>{
+                Db.loanRepaySchedule.map((data, index)=>{
                     return(
                         <tr>
-                            <td key={index}>{data.Previous05YearsBudgetVsActual}</td>
-                            <td key={index}>{data.CurrentYearlyBudget}</td>
-                            <td key={index}>{data.MonthlyBudget}</td>
-                            <td key={index}>{data.MonthlyActual}</td>
-                            <td key={index}>{data.CumulativeVariance}</td>
+                            <td key={index}>{data.loanType}</td>
+                            <td key={index}>{data.loanAccountNo}</td>
+                            <td key={index}>{data.creationDate}</td>
+                            <td key={index}>{data.dueDate}</td>
+                            <td key={index}>{data.Ageing}</td>
                         </tr>
                     );
                 })
