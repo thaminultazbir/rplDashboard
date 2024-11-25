@@ -14,40 +14,44 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Layout />
+      element: <Layout />,
+      children:[
+        {
+        path:'/budgetmonitoring',
+        element: <Budgetmonitoring />
+        },
+        {
+          path:'/loanrepayschedule',
+          element: <Loanrepayschedule />
+        },
+        {
+          path:'/classificationstatus',
+          element: <Classificationstatus />
+        },
+        {
+          path:'/rateandcommissionchart',
+          element: <Rateandcommissionchart />
+        },
+        {
+          path:'/paymentmade',
+          element: <Paymentmade />
+        },
+        {
+          path:'/projectfinance',
+          element: <Projectfinance />
+        },
+        {
+          path:'/insurancepolicydetails',
+          element: <Insurancepolicydetails />
+        },
+        {
+          path:'/taskmonitoring',
+          element: <Taskmonitoring />
+        }
+
+    ]
     },
-    {
-      path:'/budgetmonitoring',
-      element: <Budgetmonitoring />
-    },
-    {
-      path:'/loanrepayschedule',
-      element: <Loanrepayschedule />
-    },
-    {
-      path:'/classificationstatus',
-      element: <Classificationstatus />
-    },
-    {
-      path:'/rateandcommissionchart',
-      element: <Rateandcommissionchart />
-    },
-    {
-      path:'/paymentmade',
-      element: <Paymentmade />
-    },
-    {
-      path:'/projectfinance',
-      element: <Projectfinance />
-    },
-    {
-      path:'/insurancepolicydetails',
-      element: <Insurancepolicydetails />
-    },
-    {
-      path:'/taskmonitoring',
-      element: <Taskmonitoring />
-    }
+    
 
   ]);
   return (
